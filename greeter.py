@@ -8,9 +8,17 @@ name = input(prompt)
 print(f"Hello, {name}!")
 
 age = int(input("How old are you? "))
-#print(type(age))
+# print(type(age))
 if age > 18:
     msg = "You are adult."
 else:
     msg = "You are kid."
 print(msg)
+
+
+def greet_user(username):
+    """Display a simple greeting."""
+    print(f"Hello! {username.title()}!")
+
+
+greet_user('jesse')

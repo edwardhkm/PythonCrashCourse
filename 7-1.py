@@ -38,3 +38,27 @@ while active:
             print(f"Ticket is 15")
     else:
         break
+
+# 7-8
+sandwich_orders = ['egg', 'becon', 'mixed', 'ham']
+finished_sandwiches = []
+for sandwich in sandwich_orders:
+    print(f"I made your {sandwich}.")
+    finished_sandwiches.append(sandwich)
+
+for sandwich in finished_sandwiches:
+    print(f"{sandwich} sandwich made.")
+
+# 7-9
+finished_sandwiches = []
+sandwich_orders = ['egg', 'becon', 'mixed', 'ham', 'pastrami', 'pastrami', 'pastrami']
+print("Running out of pastrami sandwich.  Please remove them.")
+while 'pastrami' in sandwich_orders:
+    sandwich_orders.remove('pastrami')
+
+for sandwich in sandwich_orders:
+    print(f"I made your {sandwich} sandwich.")
+    finished_sandwiches.append(sandwich)
+
+for sandwich in finished_sandwiches:
+    print(f"{sandwich} sandwich made.")
