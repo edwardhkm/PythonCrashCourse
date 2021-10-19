@@ -10,8 +10,6 @@ class Ship:
 
         self.screen_rect = ai_game.screen.get_rect()
 
-
-
         # Moving flag
         self.moving_right = False
         self.moving_left = False
